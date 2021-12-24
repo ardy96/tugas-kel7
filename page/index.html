@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <title>Diagnosa - Kel 7 S7D INFORMATIKA</title>
+</head>
+<body>
+<div id="preloader"><div id="loader"></div></div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="" id="brand-home"><img src="../img/Logo.png" alt="logo" class="me-2"> Kelompok 7</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-stream fs-2 text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link mx-2"  href="../">Home</a>
+                <a class="nav-link active mx-2" href="" aria-current="page" id="page-diag">Diagnosis</a>
+                <a class="nav-link mx-2" href="teams.html">Teams</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<header class="h-diagnosa d-flex align-items-end">
+    <div class="container text-center">
+        <div class="txt-head">
+            <h3>Sistem Pakar Untuk Menyelesaikan Masalah Ringan Pada Kendaraan Bermotor </h3>
+        </div>
+    </div>
+</header>
+<section class="content">
+    <div class="container">
+        <div class="my-2">
+            <h6 class="text-dark">Silahkan Pilih Gejala Yang Terjadi : </h6>
+        </div>
+        <div class="diag-content">
+            <div id="f-quest">
+            </div>
+            <div class="btn-act my-4">
+                <button class="btn px-4 py-2 mx-4" id="submit" type="submit"><i class="far fa-paper-plane me-2"></i>Submit</button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap pt-4">
+        <div class="ft-left">
+            <a href="teams.html">@Kelompok 7 - S7D Teknik Informatika</a>
+        </div>
+        <div class="ft-left">
+            <p>Univ. Indraprasta PGRI</p>
+        </div>
+    </div>
+</footer>
+<!--modal -->
+<div class="modall">
+    <div class="container">
+        <div class="modall-header d-flex justify-content-between pb-4">
+            <h6>Result</h6>
+            <button class="m-close btn"><i class="fas fa-times"></i></button> 
+        </div>
+        <div class="modall-body">
+            <div class="row g-4">
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <div class="image-modall">
+                        <img src="../img/hero.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-8 col-md-8 col-sm-12">
+                    <div class="">
+                        <h6>Hasil diagnosa: </h6>
+                        <ul class="indi pb-3 px-0">
+                            <li class="t-1"></li><li class="t-2"></li><li class="t-3"></li><li class="t-4"></li>
+                        </ul>
+                        <h6>Penyebab Kerusakan: </h6>
+                        <ul class="ket pb-3 px-0">
+                            <li class="t-1"></li><li class="t-2"></li><li class="t-3"></li><li class="t-4"></li>
+                        </ul>
+                        <h6>Solusi: </h6>
+                        <ul class="solu pb-3 px-0">
+                            <li class="t-1"></li><li class="t-2"></li><li class="t-3"></li><li class="t-4"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modall-footer d-flex justify-content-end pt-4">
+            <button class="m-close btn"><i class="fas fa-times me-2"></i> Close</button>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/module.js"></script>
+</body>
+</html>
